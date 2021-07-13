@@ -1,0 +1,177 @@
+|
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <style></style>
+</head>
+
+<body class="has-background-primary-dark is-align-self-auto">
+  <section class="container">
+    <div class="register">
+      <div class="content columns">
+        <div class="column is-one-fifth mb-5">
+          <figure class="image is-128x128">
+            <img src="https://th.bing.com/th/id/Rf73e9c6b15e77f82ffec1d5377001cf9?rik=ZUhxiOUc8nzCUA&pid=ImgRaw">
+          </figure>
+
+        </div>
+        <div class="column">
+          <h1 class="title is-1" id="title">
+            Inscripción de materias
+          </h1>
+          <p class="text" id="description"> formulario para hacer registro de estudiantes de la carrera computación.</p>
+        </div>
+      </div>
+      <form class="box mx-3 my-3 mt-3" style="background-color: #9FD5D1;" id="survey-form">
+        <div class="field">
+          <label class="label" id="name-label">Nombre completo:</label>
+          <div class="control">
+            <input class="input" id="name" type="name" placeholder="Nombre completo" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" id="email-label">Correo electronico:</label>
+          <div class="control">
+            <input class="input" id="email" type="email" placeholder="Correo electronico" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" id="number-label">Edad:</label>
+          <div class="control">
+            <input class="input" id="number" min="13" max="30" type="number" placeholder="edad">
+          </div>
+        </div>
+        <div class="columns">
+          <div class="field column left">
+            <div>
+              <label class="label">Nivel academico:</label>
+              <div class="control">
+                <div class="select">
+                  <select id="dropdown">
+                    <option>Primaria</option>
+                    <option>Bachillerato</option>
+                    <option>Universitario</option>
+                    <option>Posgrado/Doctorado</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Sexo:</label>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="question" value="name">
+                  Masculino
+                </label>
+                </br>
+                <label class="radio">
+                  <input type="radio" name="question" value="name">
+                  Femenino
+                </label>
+                </br>
+                <label class="radio">
+                  <input type="radio" name="question" value="name">
+                  Otro
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Turno:</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option value="manana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field column right">
+            <label class="label">Materias</label>
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" value="1">
+                Fundamentos de programación
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="2">
+                Arquitectura de sistemas
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="3">
+                Matematicas discretas
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="4">
+                Programacion II
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="5">
+                Algoritmos II
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="6">
+                Diseño digital
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="7">
+                Inteligencia artificial
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="8">
+                Redes
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="9">
+                Sistemas operativos
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="10">
+                Ingenieria de software
+              </label>
+              </br>
+              <label class="checkbox">
+                <input type="checkbox" value="11">
+                Probabilidad
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Comentario</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Comentario"></textarea>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-success is-hovered" id="submit">Registrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
