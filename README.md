@@ -1,1 +1,1 @@
-# Actividad número uno del reto Freecodecamp 
+# Actividad número uno y dos del reto Freecodecamp 
